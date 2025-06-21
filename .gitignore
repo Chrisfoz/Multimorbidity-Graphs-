@@ -2,7 +2,10 @@
 .env
 .env.local
 .env.*.local
-/history
+
+# History files
+.history/
+history/
 
 # Ignore node_modules directory
 node_modules/
