@@ -1,6 +1,6 @@
-# GraphRAG Medical Analysis System specialising in multimorbidity patterns and clinical case studies
+# Multimorbidity Knowledge Graph System
 
-A research-grade graph-based Retrieval-Augmented Generation (RAG) system for complex medical document analysis, specializing in multimorbidity patterns and clinical case studies. Enhanced with validated clinical data from peer-reviewed multimorbidity research.
+An advanced graph-based analytics platform for discovering complex relationships between chronic medical conditions using validated clinical data. This system combines knowledge graphs with AI-powered analysis to uncover multimorbidity patterns, predict disease interactions, and support evidence-based clinical decision making.
 
 ## 🏆 Research Foundation
 
@@ -12,16 +12,17 @@ This system integrates the **CPRD Multimorbidity Codelists**—a validated datas
 - **Lead Researcher**: Anna Head, University of Liverpool/SPHR PhD Student
 - **Dataset**: 211 chronic conditions across 15 body systems with rigorous clinical validation
 
-## 🎯 Project Overview
+## 🎯 Core Mission
 
-Combines knowledge graphs and large language models to analyse medical documents, extract clinical relationships, and provide intelligent querying for healthcare research and clinical decision support.
+This platform transforms how we understand and analyze multimorbidity by leveraging graph-based algorithms to reveal hidden relationships between chronic conditions. By processing validated clinical datasets through advanced knowledge graphs, we enable researchers and clinicians to discover patterns that traditional analysis methods cannot detect.
 
-### Primary Use Cases
+### Key Capabilities
 
-1. **Multimorbidity Pattern Analysis** – Understand complex interactions between chronic conditions using validated codelists
-2. **Clinical Case Studies** – Extract insights from detailed patient scenarios
-3. **Medical Knowledge Discovery** – Identify patterns and relationships in clinical literature
-4. **Healthcare Research** – Analyze multimorbidity trends and outcomes at the population level
+1. **Relationship Discovery** – Map complex interactions between 211 validated chronic conditions across 15 body systems
+2. **Pattern Recognition** – Identify multimorbidity clusters and progression pathways using graph algorithms  
+3. **Predictive Analytics** – Forecast disease interactions and complications through network analysis
+4. **Clinical Intelligence** – Generate evidence-based insights for personalized care planning
+5. **Population Health** – Analyze multimorbidity trends at scale for healthcare policy development
 
 ## 🏗️ Architecture
 
@@ -81,7 +82,7 @@ The system uses a modular architecture separating data processing from graph ope
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd Graph_updarte
+   cd Multimorbidity_Graphs
    ```
 
 2. **Install dependencies**
@@ -116,22 +117,43 @@ The system uses a modular architecture separating data processing from graph ope
 
 3. **Query the system**: Once initialized, you can query the knowledge graph with medical questions
 
-### Sample Queries Enhanced by CPRD Data
+### Advanced Query Examples
 
-#### Population-Level Multimorbidity Analysis
-- "What are the most common three-condition clusters in cardiovascular diseases?"
-- "How do endocrine system conditions interact with circulatory system diseases?"
-- "What monitoring requirements exist for patients with diabetes and heart failure?"
+#### Graph-Based Relationship Discovery
+```
+# Find unexpected condition clusters
+"What conditions frequently co-occur but are from different body systems?"
 
-#### Clinical Decision Support
-- "For a patient with Type 2 diabetes, COPD, and depression, what are the key interaction considerations?"
-- "What are the progression pathways from basic to complex multimorbidity?"
-- "How should care coordination be managed across multiple body systems?"
+# Identify central hub conditions
+"Which conditions have the highest number of connections to other diseases?"
 
-#### Research and Policy Questions
-- "What are the differences between single-visit and multi-visit diagnostic criteria?"
-- "How do condition sequelae affect multimorbidity complexity scoring?"
-- "What test values are integrated into chronic disease monitoring?"
+# Trace disease progression pathways
+"What are the most common paths from diabetes to cardiovascular complications?"
+```
+
+#### Network Analysis Queries
+```
+# Community detection
+"Identify distinct disease communities and their characteristics"
+
+# Centrality measures
+"Rank conditions by their influence on overall multimorbidity complexity"
+
+# Path analysis
+"Find the shortest paths between seemingly unrelated conditions"
+```
+
+#### Predictive Analytics
+```
+# Risk prediction
+"Given a patient with condition X, what other conditions are they likely to develop?"
+
+# Intervention impact
+"If we prevent condition Y, what downstream effects would we see?"
+
+# Population modeling
+"How would reducing diabetes prevalence affect the entire disease network?"
+```
 
 ## 🧪 Testing
 
@@ -218,14 +240,56 @@ This integration demonstrates the power of open science and collaborative resear
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📈 Roadmap
+## 🚀 Next Steps: Unlocking Hidden Relationships
 
-- [ ] **CPRD Data Integration**: Full integration of all 211 conditions into knowledge graph
-- [ ] **Advanced Analytics**: Multimorbidity complexity scoring algorithms
-- [ ] **Interactive Visualization**: Graph visualization of condition relationships
-- [ ] **FHIR Integration**: Healthcare interoperability standard support
-- [ ] **Clinical Terminology**: Enhanced SNOMED CT hierarchy integration
-- [ ] **Multi-language Support**: International medical literature processing
+Our roadmap focuses on sophisticated graph-based approaches to reveal previously unknown connections in multimorbidity data:
+
+### Phase 1: Foundation Building (Current)
+- [x] **CPRD Dataset Integration**: 211 validated conditions with SNOMED CT codes
+- [x] **Neo4j Knowledge Graph**: Core infrastructure for relationship mapping
+- [x] **RAG Pipeline**: Document processing and intelligent querying
+- [ ] **Graph Algorithm Implementation**: Centrality measures, community detection, path analysis
+
+### Phase 2: Relationship Discovery (Next 3 months)
+- [ ] **Network Analysis Algorithms**
+  - Implement PageRank to identify influential conditions
+  - Deploy community detection to find disease clusters
+  - Apply shortest path algorithms to trace condition progressions
+- [ ] **Temporal Pattern Mining**
+  - Analyze condition onset sequences across body systems
+  - Identify early warning indicators for complex multimorbidity
+  - Map disease progression trajectories using graph walks
+- [ ] **Co-occurrence Network Building**
+  - Statistical significance testing for condition pairs
+  - Weighted edge creation based on clinical evidence strength
+  - Multi-layer network construction for different patient populations
+
+### Phase 3: Advanced Analytics (3-6 months)
+- [ ] **Predictive Relationship Modeling**
+  - Graph neural networks for condition interaction prediction
+  - Link prediction algorithms for identifying future comorbidities
+  - Anomaly detection for unusual multimorbidity patterns
+- [ ] **Risk Stratification Networks**
+  - Patient similarity graphs based on condition profiles
+  - Graph-based clustering for personalized risk assessment
+  - Dynamic network analysis for condition evolution tracking
+
+### Phase 4: Clinical Intelligence (6-12 months)
+- [ ] **Interactive Graph Visualization**
+  - Real-time exploration of condition relationships
+  - Customizable network views for different clinical scenarios
+  - Integration with clinical decision support systems
+- [ ] **FHIR-Compliant Graph APIs**
+  - Standardized healthcare data exchange
+  - Integration with electronic health record systems
+  - Graph-based clinical pathway recommendations
+
+### Breakthrough Opportunities
+Our graph-based approach will reveal:
+- **Hidden Condition Clusters**: Unexpected groupings of seemingly unrelated conditions
+- **Cascade Effect Pathways**: How single conditions trigger multiple system failures
+- **Protective Relationships**: Conditions that may prevent others from developing
+- **System Vulnerability Points**: Critical nodes where interventions could prevent complex multimorbidity
 
 ## 📚 Key References
 
